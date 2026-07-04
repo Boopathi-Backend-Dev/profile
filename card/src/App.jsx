@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4 overflow-x-auto">
-      <div className="relative w-[500px] h-[920px] flex-shrink-0 overflow-hidden shadow-2xl rounded-sm">
+      <div className="relative w-[466px] h-[920px] flex-shrink-0 overflow-hidden shadow-2xl rounded-sm">
         {/* Background */}
         <img
           src={bg}
@@ -94,7 +94,7 @@ export default function App() {
               link={`mailto:${employee.email}`}
             />
 
-                        <ContactCard
+            <ContactCard
               icon={<Globe size={24} />}
               title="WEBSITE"
               value={employee.website}
@@ -142,9 +142,7 @@ function ContactCard({ icon, title, value, link }) {
       <div className="w-px h-10 bg-[#D88A16]/40 mx-4"></div>
 
       <div className="flex-1">
-        <p className="text-[10px] tracking-widest text-gray-500">
-          {title}
-        </p>
+        <p className="text-[10px] tracking-widest text-gray-500">{title}</p>
 
         <p className="text-[#08152F] font-semibold text-[16px] mt-1 break-all">
           {value}
