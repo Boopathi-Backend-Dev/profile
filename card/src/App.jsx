@@ -1,8 +1,9 @@
+
 import { Mail, Globe, Phone } from "lucide-react";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import bg from "./assets/back.jpeg";
-import profileImg from "./assets/profile.png";
+import profileImg from "./assets/profile.png"; // உங்கள் profile image
 
 export default function App() {
   const employee = {
@@ -13,12 +14,12 @@ export default function App() {
     instagram: "boopathibio111",
     phone: "+91 6380854832",
     email: "boopathibio143@gmail.com",
-    website: "boopathi-personal-portfolio.vercel.app",
+    website: "boopathi-personal-portfolio.vercel.app/",
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4 overflow-x-auto">
-      <div className="relative w-[466px] h-[920px] flex-shrink-0 overflow-hidden shadow-2xl rounded-sm">
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center ">
+      <div className="relative w-full max-w-[600px] h-[920px] overflow-hidden shadow-2xl rounded-sm">
         {/* Background */}
         <img
           src={bg}
@@ -91,7 +92,7 @@ export default function App() {
               icon={<Mail size={24} />}
               title="EMAIL"
               value={employee.email}
-              link={`mailto:${employee.email}`}
+              link={`https://mail.google.com/mail/?view=cm&fs=1&to=${employee.email}`}
             />
 
             <ContactCard
@@ -109,7 +110,7 @@ export default function App() {
             <p className="text-[11px] tracking-[2px] font-semibold text-[#08152F]">
               WE DESIGN.
               <span> WE INNOVATE.</span>
-              <span className="text-[#D88A16]"> WE ELEVATE.</span>
+              <span className="text-[#D88A16]">WE ELEVATE.</span>
             </p>
 
             <div className="w-12 h-[2px] bg-[#D88A16] mx-auto mt-3"></div>
@@ -144,9 +145,7 @@ function ContactCard({ icon, title, value, link }) {
       <div className="flex-1">
         <p className="text-[10px] tracking-widest text-gray-500">{title}</p>
 
-        <p className="text-[#08152F] font-semibold text-[16px] mt-1 break-all">
-          {value}
-        </p>
+        <p className="text-[#08152F] font-semibold text-[16px] mt-1">{value}</p>
       </div>
 
       <IoIosArrowForward className="text-[#D88A16] text-xl" />
