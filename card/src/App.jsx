@@ -107,10 +107,10 @@ export default function App() {
 
           {/* Footer */}
           <div className="mb-8 text-center">
-            <p className="text-[11px] tracking-[2px] font-semibold text-[#08152F]">
+            <p className="text-[10px] tracking-[2px] font-semibold text-[#08152F]">
               WE DESIGN.
-              <span> WE INNOVATE.</span>
-              <span className="text-[#D88A16]">WE ELEVATE.</span>
+              <span className="text-[#D88A16]"> WE INNOVATE.</span>
+              <span>WE ELEVATE.</span>
             </p>
 
             <div className="w-12 h-[2px] bg-[#D88A16] mx-auto mt-3"></div>
